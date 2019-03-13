@@ -4,12 +4,9 @@ import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			code: placeholder
-		};
-	}
+	state = {
+		code: placeholder
+	};
 
 	handleChange = e => {
 		this.setState({ [e.target.name]: e.target.value });
